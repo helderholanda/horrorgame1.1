@@ -1,0 +1,86 @@
+body {
+    background-color:black;
+    color:white;
+    font-family:'Creepster',cursive;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    min-height:100vh;
+}
+h1 {
+    font-size:3em;
+    margin:20px 0 10px;
+    color:red;
+    text-shadow:2px 2px 0 #8B0000,4px 4px 5px rgba(255,0,0,0.7);
+    text-align:center;
+}
+p {font-size:1.2em;margin:10px 20px;color:#ccc;text-align:center;}
+.btn {
+    background-color:red;
+    color:white;
+    font-size:1.2em;
+    font-family:'Creepster',cursive;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    box-shadow:0 0 15px rgba(255,0,0,0.7);
+    transition:all 0.3s ease;
+    margin:10px;
+    display:inline-block;
+}
+.btn:hover {background-color:darkred;transform:scale(1.05);}
+.gif-container {
+    margin:20px 0;
+    text-align:center;
+}
+.gif-container img {
+    max-width:90%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(255,0,0,0.7);
+}
+.question-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    max-width:600px;
+    margin-top:20px;
+    position:relative;
+}
+#options {display:flex;flex-direction:column;align-items:center;width:100%;}
+#roundCounter {font-size:1.5em;margin:10px;color:#ff5555;}
+#totalQuestions {font-size:1em;margin:5px;color:#ff5555;}
+#timerContainer {
+    width:25px;
+    height:200px;
+    border:2px solid red;
+    position:absolute;
+    right:-50px;
+    top:10px;
+    border-radius:10px;
+    overflow:hidden;
+    display:none;
+    background: rgba(50,0,0,0.3);
+    box-shadow: inset 0 0 10px rgba(255,0,0,0.5);
+}
+#timerFill {
+    width:100%;
+    height:0%;
+    position:absolute;
+    bottom:0;
+    background: linear-gradient(to top, #ff0000 0%, #8B0000 100%);
+    border-radius:5px;
+    box-shadow: inset 0 0 10px rgba(255,0,0,0.5);
+    transition: height 1s linear;
+}
+@media(max-width:500px){
+    #timerContainer {right:-35px;height:150px;width:20px;}
+    h1 {font-size:2.2em;}
+    .btn {font-size:1em;padding:10px 20px;}
+}
