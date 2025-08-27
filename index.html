@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filmes Mortais</title>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Filmes Mortais</h1>
+<p>Você tem coragem de enfrentar seus medos?</p>
+<button class="btn" id="startBtn">Aceitar o desafio</button>
+
+<div class="gif-container" id="startGif">
+    <img id="startGifImg" src="" alt="Boneco Jigsaw">
+</div>
+
+<p id="roundCounter"></p>
+
+<div class="question-container" id="quizContainer" style="display:none;">
+    <p id="questionText"></p>
+    <p id="totalQuestions"></p>
+    <div id="options"></div>
+    <div class="gif-container">
+        <img id="questionGif" src="" alt="GIF assustador">
+    </div>
+    <div id="timerContainer"><div id="timerFill"></div></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
